@@ -17,6 +17,11 @@ jobRouter.get('/', function showAllJobs(request, response, next){
 
 });
 
+/**
+ * Adds a job to the array of jobs
+ * @param {Object}   request    Must have a body like: { company: String}
+ * @param {Object}   response   Getting back an object with the added job
+ */
 function addAJob(request, response, next){
   console.log('Incoming!!!!', request.body);
 
